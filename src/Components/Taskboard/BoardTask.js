@@ -3,7 +3,8 @@ import { Draggable } from "react-beautiful-dnd";
 import styled from "styled-components";
 import ReactStars from "react-rating-stars-component";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEllipsisV } from '@fortawesome/free-solid-svg-icons/faEllipsisV';
+import { faEllipsisV } from "react-icons/fa";
+
 
 
 const Container = styled.div`
@@ -105,7 +106,7 @@ export default class BoardTask extends React.Component {
             />
             </span>
             <div><img className="roundbg" alt="" src={this.props.task.picture.thumbnail} name={this.props.task.name.name} size={16} /> 
-            <span > <FontAwesomeIcon icon={faEllipsisV}  size="lg" className="icon-p" /></span> 
+            <span > <FaEllipsisV  className="icon-p" /></span> 
           </div>
               
             </div>
